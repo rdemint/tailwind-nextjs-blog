@@ -1,13 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data",
+    "\\components",
     "\\data\\blog",
-    "\\public",
+    "\\layouts",
+    "\\lib\\utils",
+    "\\pages",
     "\\public\\static",
     "\\public\\static\\favicons",
     "\\public\\static\\images"
   ],
-  "SelectedNode": "\\data\\blog",
+  "SelectedNode": "\\pages\\tags.js",
   "PreviewInSolutionExplorer": false
 }
