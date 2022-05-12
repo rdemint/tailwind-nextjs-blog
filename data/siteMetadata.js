@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'qms Blocs',
   author: 'Raines Demint',
-  headerTitle: 'qms Blocs',
+  headerTitle: '',
   description: 'Building blocs for better quality management systems.',
   language: 'en-us',
   theme: 'system', // system, dark or light
