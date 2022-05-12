@@ -9,4 +9,5 @@ linkedin: https://www.linkedin.com/in/raines-demint
 github: https://github.com
 ---
 
-Raines Demint is a medical device professional on a mission to improve the way quality management systems are designed, built, maintained, and audited. He is interested in boundary-spanning to solve medical device challenges that are not unique to the industry.
+Raines Demint is a medical device professional on a mission to improve the way quality management systems are designed, built, maintained, and audited. He is interested in boundary-spanning to solve medical device challenges that are not unique to the industry.  
+Want to share some ideas, collaborate, or just say hi? Connect with Raines on linkedIn.

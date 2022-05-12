@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'qms Blocs',
-  author: 'Raines Demint',
+  title: 'Raines Demint',
+  author: 'QA LADDER LLC',
   headerTitle: '',
-  description: 'Building blocs for better quality management systems.',
+  description: 'Thoughts and building blocs for better quality management systems.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://rainesdemint.com',
