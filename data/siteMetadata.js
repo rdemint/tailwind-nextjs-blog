@@ -1,20 +1,17 @@
 const siteMetadata = {
   title: 'Raines Demint',
-  author: 'QA LADDER LLC',
+  author: 'Raines Demint',
+  company: 'QA LADDER LLC',
   headerTitle: '',
   description: 'Thoughts and building blocs for better quality management systems.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://rainesdemint.com',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  //siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.svg',
   image: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'support@qaladder.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com/in/raines-demint',
   locale: 'en-US',
   analytics: {
