@@ -5,7 +5,7 @@ const siteMetadata = {
   headerTitle: '',
   description: 'Thoughts and building blocs for better quality management systems.',
   language: 'en-us',
-  theme: 'system', // system, dark or light
+  theme: 'light', // system, dark or light
   siteUrl: 'https://rainesdemint.com',
   //siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.svg',
