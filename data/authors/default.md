@@ -2,7 +2,7 @@
 name: Raines Demint
 avatar: /static/images/rd_profile2.jpg
 occupation: RAQA Consultant
-company: QA LADDER
+company:
 email: address@yoursite.com
 twitter: https://twitter.com/Twitter
 linkedin: https://www.linkedin.com/in/raines-demint
