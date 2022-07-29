@@ -91,7 +91,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               {/*<Provider apiKey="pt_b95e0dc4778a3b172b9b370f3684d0">*/}
               <LikeButton namespace="testing-react" id="everybody-like-now" />
               {/*</Provider>*/}
-              <Comments frontMatter={frontMatter} />
             </div>
             <footer>
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
