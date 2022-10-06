@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@fontsource/inter": "4.5.2",
+    "@headlessui/react": "^1.7.3",
+    "@heroicons/react": "^2.0.12",
     "@lyket/react": "^1.4.8",
     "@mailchimp/mailchimp_marketing": "^3.0.58",
     "esbuild": "^0.13.13",
