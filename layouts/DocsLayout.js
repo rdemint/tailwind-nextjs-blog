@@ -23,16 +23,26 @@ export default function DocsLayout({
                   return (
                     <div key={section.name}>
                       <h2 className="text-xl">{section.name}</h2>
-                      <div className="pl-4">
-                        {section.children.map((child, i) => (
-                          <div key={child.slug}>
-                            <Link href={child.slug}>
-                              <a className="text-md tracking-tight text-zinc-700 hover:text-zinc-900 hover:underline hover:decoration-rose-100 hover:underline-offset-2">
-                                {child.name}
-                              </a>
-                            </Link>
-                          </div>
-                        ))}
+
+                      <div className="pl-3">
+                        {section.children.map((child, i) => {
+                          return (
+                            <div key={child.slug}>
+                              <h2 className="text-xl">{child.name}</h2>
+                              {child.children.map((topic, i) => {
+                                return (
+                                  <div key={topic.key} className="pl-5">
+                                    <Link href={topic.slug}>
+                                      <a className="text-md tracking-tight text-zinc-700 hover:text-zinc-900 hover:underline hover:decoration-rose-100 hover:underline-offset-2">
+                                        {topic.name}
+                                      </a>
+                                    </Link>
+                                  </div>
+                                )
+                              })}
+                            </div>
+                          )
+                        })}
                       </div>
                     </div>
                   )
