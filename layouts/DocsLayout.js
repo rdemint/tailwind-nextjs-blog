@@ -22,13 +22,13 @@ export default function DocsLayout({
                 {DocsNavList.map((section, i) => {
                   return (
                     <div key={section.name}>
-                      <h2 className="text-xl">{section.name}</h2>
+                      <h2 className="text-xl font-semibold">{section.name}</h2>
 
                       <div className="pl-3">
                         {section.children.map((child, i) => {
                           return (
                             <div key={child.slug}>
-                              <h2 className="text-xl">{child.name}</h2>
+                              <h2 className="text-xl font-medium">{child.name}</h2>
                               {child.children.map((topic, i) => {
                                 return (
                                   <div key={topic.key} className="pl-5">

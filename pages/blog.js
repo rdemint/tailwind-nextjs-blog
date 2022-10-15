@@ -2,6 +2,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
 import { PageSEO } from '@/components/SEO'
+import SectionContainer from '../components/SectionContainer'
 
 export const POSTS_PER_PAGE = 5
 
@@ -21,13 +22,15 @@ export default function Blog({ docs, posts, initialDisplayPosts, pagination }) {
   return (
     <>
       <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
-      <ListLayout
-        docs={docs}
-        posts={posts}
-        initialDisplayPosts={initialDisplayPosts}
-        pagination={pagination}
-        title="All articles"
-      />
+      <SectionContainer>
+        <ListLayout
+          docs={docs}
+          posts={posts}
+          initialDisplayPosts={initialDisplayPosts}
+          pagination={pagination}
+          title="All articles"
+        />
+      </SectionContainer>
     </>
   )
 }
