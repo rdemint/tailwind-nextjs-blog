@@ -20,7 +20,7 @@ const LayoutWrapper = ({ children }) => {
                   <Image src={siteMetadata.siteLogo} height="75" width="464" />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 text-2xl font-semibold sm:block">
+                  <div className="hidden h-6 text-xl font-semibold sm:block">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
@@ -35,13 +35,14 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+                  className="p-1 font-medium text-gray-700 decoration-rose-500 
+transition hover:text-rose-700 hover:underline hover:underline-offset-4 hover:duration-150 hover:ease-in-out
+dark:text-gray-100 sm:p-4"
                 >
                   {link.title}
                 </Link>
               ))}
             </div>
-            <ThemeSwitch />
             <MobileNav />
           </div>
         </header>
