@@ -4,21 +4,22 @@ draft: false
 summary: 'This task is related to QMS planning.'
 ---
 
-import RegLangBox from './docs/RegLangBox.js'
+import RegLang from './docs/RegLang.js'
 import Qdoc from './docs/Qdoc.js'
 import QdocList from './docs/QdocList.js'
 import ActionItem from './docs/ActionItem.js'
 import Subtask from './docs/Subtask.js'
+import ExampleLang from './docs/ExampleLang.js'
 
 # MDSAP Task 1-1 QMS Planning
 
-<RegLangBox>
+<RegLang>
   MDSAP Task 1-1. Confirm that quality management system planning is performed to ensure that all
   required processes are identified, documented, implemented, monitored and maintained in order to
   conform to the applicable requirements and meet quality objectives.Verify that changes to the
   quality management system are managed to maintain the conformity of the quality management system
   and of the devices produced. Verify that a quality manual has been documented.
-</RegLangBox>
+</RegLang>
 
 <QdocList
   docs={[
@@ -29,6 +30,23 @@ import Subtask from './docs/Subtask.js'
     'Document Index',
   ]}
 />
+
+<ExampleLang>
+- Quality Manual Rev.X
+- Document Index (current)
+
+QMS is scoped to MDSAP for United States, Australia, Brazil, Japan, and Canada.
+The organization establishes the following exclusions/non-applications in the quality manual...
+
+- Document Control List (current)
+- ISO 13485:2016 Certificate No. XXXXXX Granted YYYY-MM-DD Expires YYYY-MM-DD
+
+Organization has not had any changes to the QMS scope in the previous two years.
+
+- SOP Document Control Ver.X
+- Document Change Log report (current)
+
+</ExampleLang>
 
 <Subtask actionitem="Review the quality manual">
   QMS planning is reflected by a <Qdoc>Quality Manual</Qdoc> with an appropriate scope of
