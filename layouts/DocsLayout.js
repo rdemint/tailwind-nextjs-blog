@@ -20,12 +20,12 @@ export default function DocsLayout({ children }) {
                       <div className="pl-3">
                         {section.children.map((child, i) => {
                           return (
-                            <div key={child.slug}>
+                            <div key={child.name}>
                               <h2 className="text-xl font-medium">{child.name}</h2>
                               {child.children.map((topic, i) => {
                                 return (
-                                  <div key={topic.slug} className="pl-5">
-                                    <Link href={topic.slug}>
+                                  <div key={topic.name} className="pl-5">
+                                    <Link href={topic.name}>
                                       <a className="text-md tracking-tight text-zinc-700 hover:text-zinc-900 hover:underline hover:decoration-rose-100 hover:underline-offset-2">
                                         {topic.name}
                                       </a>
