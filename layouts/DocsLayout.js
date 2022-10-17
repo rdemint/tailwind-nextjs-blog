@@ -25,7 +25,7 @@ export default function DocsLayout({ children }) {
                               {child.children.map((topic, i) => {
                                 return (
                                   <div key={topic.name} className="pl-5">
-                                    <Link href={topic.name}>
+                                    <Link href={topic.slug}>
                                       <a className="text-md tracking-tight text-zinc-700 hover:text-zinc-900 hover:underline hover:decoration-rose-100 hover:underline-offset-2">
                                         {topic.name}
                                       </a>
