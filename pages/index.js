@@ -1,10 +1,10 @@
-import Link from '@/components/Link'
+import Link from 'next/link'
 import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
-import Hero from '../components/Hero'
+import Hero from '@/components/Hero'
 
 import NewsletterForm from '@/components/NewsletterForm'
 import SectionContainer from '../components/SectionContainer'

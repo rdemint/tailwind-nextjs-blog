@@ -1,11 +1,11 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Link from './Link'
 import SectionContainer from './SectionContainer'
-import Footer from './Footer'
-import MobileNav from './MobileNav'
-import ThemeSwitch from './ThemeSwitch'
+import Footer from '@/components/Footer'
+import MobileNav from '@/components/MobileNav'
+import ThemeSwitch from '@/components/ThemeSwitch'
 
 const LayoutWrapper = ({ children }) => {
   return (
@@ -16,7 +16,6 @@ const LayoutWrapper = ({ children }) => {
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  {/*<Logo />*/}
                   <Image src={siteMetadata.siteLogo} height="75" width="464" />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (

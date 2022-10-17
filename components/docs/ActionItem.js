@@ -1,6 +1,6 @@
 export default function ActionItem({ children }) {
   return (
-    <div>
+    <div className="bg-teal-100">
       <form>
         <input
           type="checkbox"
