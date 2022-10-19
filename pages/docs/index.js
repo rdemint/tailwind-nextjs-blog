@@ -1,10 +1,28 @@
 import DocsLayout from '@/layouts/DocsLayout'
 
-export default function DocsHome(props) {
+import { getAllFilesFrontMatter } from '@/lib/mdx'
+import siteMetadata from '@/data/siteMetadata'
+import ListLayout from '@/layouts/ListLayout'
+import { PageSEO } from '@/components/SEO'
+
+export const POSTS_PER_PAGE = 5
+
+export async function getStaticProps() {
+  const posts = await getAllFilesFrontMatter('blog')
+  const docs = await getAllFilesFrontMatter('docs')
+  const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
+  const pagination = {
+    currentPage: 1,
+    totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
+  }
+
+  return { props: { initialDisplayPosts, docs, posts, pagination } }
+}
+
+export default function DocsHome({ docs, posts, pagination }) {
   return (
     <DocsLayout>
-      <h1>Welcome to the docs page</h1>
-      <p>Practical advice and easily searchable!</p>
+      <ListLayout docs={docs} posts={posts} title="Welcome to the docs" pagination={pagination} />
     </DocsLayout>
   )
 }
