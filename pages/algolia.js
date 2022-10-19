@@ -1,12 +1,13 @@
-import { SearchBox, Hits } from 'react-instantsearch-hooks-web'
+import { Hits } from 'react-instantsearch-hooks-web'
 import SearchHit from '@/components/SearchHit'
+import AlgoliaSearchBox from '@/components/AlgoliaSearchBox'
 
 export default function Algolia() {
   return (
     <div>
       <p>something else</p>
       <h1>Algolia search</h1>
-      <SearchBox classNames={{ root: 'm-4', input: 'rounded' }} />
+      <AlgoliaSearchBox />
       <Hits hitscomponent={SearchHit} />
     </div>
   )
