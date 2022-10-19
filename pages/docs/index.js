@@ -1,8 +1,9 @@
+import DocsLayout from '@/layouts/DocsLayout'
+
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
 import { PageSEO } from '@/components/SEO'
-import SectionContainer from '../components/SectionContainer'
 
 export const POSTS_PER_PAGE = 5
 
@@ -18,19 +19,10 @@ export async function getStaticProps() {
   return { props: { initialDisplayPosts, docs, posts, pagination } }
 }
 
-export default function Blog({ docs, posts, initialDisplayPosts, pagination }) {
+export default function DocsHome({ docs, posts, pagination }) {
   return (
-    <>
-      <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
-      <SectionContainer>
-        <ListLayout
-          docs={docs}
-          posts={posts}
-          initialDisplayPosts={initialDisplayPosts}
-          pagination={pagination}
-          title="All articles"
-        />
-      </SectionContainer>
-    </>
+    <DocsLayout>
+      <ListLayout docs={docs} posts={posts} title="Welcome to the docs" pagination={pagination} />
+    </DocsLayout>
   )
 }
