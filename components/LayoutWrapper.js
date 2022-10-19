@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 
 const LayoutWrapper = ({ children }) => {
   return (
-    <div className="flex h-screen flex-col justify-between">
+    <div className="flex min-h-screen flex-col justify-between">
       <Header />
       <SectionContainer>
         <main className="mb-auto">{children}</main>
