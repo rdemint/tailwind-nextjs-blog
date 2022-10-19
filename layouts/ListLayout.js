@@ -53,13 +53,15 @@ export default function ListLayout({ docs, posts, title, initialDisplayPosts = [
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags, type } = frontMatter
             return (
-              <li key={slug} className="py-4">
+              <li key={slug} className="list-none py-4">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                   <div className="space-y-3 xl:col-span-3">
                     <div>
-                      <h3 className="text-2xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
+                      <h3>
                         <Link href={`/${type}/${slug}`} className="text-zinc-200">
-                          {title}
+                          <a className="text-2xl font-bold leading-8 tracking-tight text-gray-900">
+                            {title}
+                          </a>
                         </Link>
                       </h3>
                       <div className="flex flex-wrap">
