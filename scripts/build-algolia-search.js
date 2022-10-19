@@ -65,7 +65,7 @@ async function getAllFilesFrontMatter(folder) {
 }
 
 ;(async function () {
-  dotenv.config('.env.local')
+  dotenv.config()
   try {
     const frontmatter = await getAllFilesFrontMatter('docs')
     const client = algoliasearch(
