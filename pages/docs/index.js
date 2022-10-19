@@ -23,9 +23,7 @@ export async function getStaticProps() {
 export default function DocsHome({ docs, posts, pagination }) {
   return (
     <DocsLayout>
-      <SectionContainer>
-        <ListLayout docs={docs} posts={posts} title="Explore the docs" pagination={pagination} />
-      </SectionContainer>
+      <ListLayout docs={docs} posts={posts} title="Explore the docs" pagination={pagination} />
     </DocsLayout>
   )
 }
