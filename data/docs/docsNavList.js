@@ -45,8 +45,11 @@ export const DocsNavList = [
         children: [
           { name: '1-1 QMS Planning', slug: '/docs/mdsap-1-1' },
           { name: '1-2 Management representative', slug: '/docs/mdsap-1-2' },
-          { name: '1-3 Policy and objective', slug: '/docs/mdsap-1-3' },
-          { name: '1-4 Org structure, responsibility, resources', slug: '/docs/mdsap-1-4' },
+          { name: '1-3 Policy and objective', slug: '/docs/mdsap-1-3-policy-and-objectives' },
+          {
+            name: '1-4 Org structure, responsibility, resources',
+            slug: '/docs/mdsap-1-4-org-responsibility-resources',
+          },
           { name: '1-5 Outsourcing', slug: '/docs/mdsap-1-5' },
           { name: '1-6 Personnel and training', slug: '/docs/mdsap-1-6' },
           { name: '1-7 Risk management', slug: '/docs/mdsap-1-7' },

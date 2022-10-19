@@ -1,10 +1,7 @@
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { DocsNavList } from '@/data/docs/docsNavList'
 
 export default function DocsLayout({ children }) {
-  const router = useRouter()
-  console.log(router.asPath)
   return (
     <div className="flex">
       <section id="sidebar">
