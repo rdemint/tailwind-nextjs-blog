@@ -1,6 +1,7 @@
 import '@/css/tailwind.css'
 import '@/css/prism.css'
 import 'katex/dist/katex.css'
+import { InstantSearch } from 'react-instantsearch-hooks-web'
 
 import '@fontsource/inter/variable-full.css'
 
