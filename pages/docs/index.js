@@ -1,5 +1,5 @@
 import DocsLayout from '@/layouts/DocsLayout'
-
+import SearchModal from '@/components/SearchModal'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
@@ -23,7 +23,8 @@ export async function getStaticProps() {
 export default function DocsHome({ docs, posts, pagination }) {
   return (
     <DocsLayout>
-      <ListLayout docs={docs} posts={posts} title="Explore the docs" pagination={pagination} />
+      <h1 className="text-xl">Explore the docs</h1>
+      <SearchModal />
     </DocsLayout>
   )
 }
