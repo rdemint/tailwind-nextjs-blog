@@ -1,4 +1,5 @@
 ﻿import { MDXLayoutRenderer } from '@/components/MDXComponents'
+import DocsLayout from '@/layouts/DocsLayout'
 import PageTitle from '@/components/PageTitle'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
 
@@ -34,27 +35,30 @@ export async function getStaticProps({ params }) {
 export default function Docs({ post, authorDetails, prev, next, allFrontMatter }) {
   const { mdxSource, frontMatter } = post
   return (
-    <>
-      {frontMatter.draft !== true ? (
-        <MDXLayoutRenderer
-          layout={'DocsLayout'}
-          mdxSource={mdxSource}
-          frontMatter={frontMatter}
-          authorDetails={authorDetails}
-          allFrontMatter={allFrontMatter}
-          prev={prev}
-          next={next}
-        />
-      ) : (
-        <div className="mt-24 text-center">
-          <PageTitle>
-            Under Construction{' '}
-            <span role="img" aria-label="roadwork sign">
-              Under construction
-            </span>
-          </PageTitle>
-        </div>
-      )}
-    </>
+    <div className="flex">
+      <DocsLayout></DocsLayout>
+      <div className="prose">
+        {frontMatter.draft !== true ? (
+          <MDXLayoutRenderer
+            layout={'DocsPageLayout'}
+            mdxSource={mdxSource}
+            frontMatter={frontMatter}
+            authorDetails={authorDetails}
+            allFrontMatter={allFrontMatter}
+            prev={prev}
+            next={next}
+          />
+        ) : (
+          <div className="mt-24 text-center">
+            <PageTitle>
+              Under Construction{' '}
+              <span role="img" aria-label="roadwork sign">
+                Under construction
+              </span>
+            </PageTitle>
+          </div>
+        )}
+      </div>
+    </div>
   )
 }
