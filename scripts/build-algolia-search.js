@@ -54,7 +54,7 @@ async function getAllFilesFrontMatter(folder) {
     if (frontmatter.draft !== true) {
       allFrontMatter.push({
         ...frontmatter,
-        slug: formatSlug(fileName),
+        slug: frontmatter.canonicalUrl ? frontmatter.canonicalUrl : '/404/',
         date: frontmatter.date ? new Date(frontmatter.date).toISOString() : null,
         objectID: formatSlug(fileName),
       })
@@ -72,8 +72,6 @@ async function getAllFilesFrontMatter(folder) {
       process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
       process.env.ALGOLIA_SEARCH_ADMIN_KEY
     )
-    console.log(process.env.ALGOLIA_SEARCH_ADMIN_KEY)
-
     const index = client.initIndex('qms_data_index')
     const algoliaResponse = await index.saveObjects(frontmatter)
     console.log(`Successfully added ${algoliaResponse.objectIDs.length} records to Algolia search.`)
