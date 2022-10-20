@@ -1,11 +1,15 @@
 import Link from 'next/link'
 import { DocsNavList } from '@/data/docs/docsNavList'
+import SearchModal from '@/components/SearchModal'
 
 export default function DocsLayout({ children }) {
   return (
     <div className="flex">
       <section id="sidebar">
         <div className="t-0 sticky h-full w-96 pl-4">
+          <div className="m-2">
+            <SearchModal />
+          </div>
           <div className="flex flex-grow flex-col overflow-y-auto border-gray-200">
             <div className="flex flex-grow flex-col">
               <nav className="flex-1 space-y-1 px-2 pb-4">

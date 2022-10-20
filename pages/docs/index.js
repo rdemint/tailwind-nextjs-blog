@@ -23,8 +23,7 @@ export async function getStaticProps() {
 export default function DocsHome({ docs, posts, pagination }) {
   return (
     <DocsLayout>
-      <h1 className="text-xl">Explore the docs</h1>
-      <SearchModal />
+      <h1>Explore the docs</h1>
     </DocsLayout>
   )
 }
